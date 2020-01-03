@@ -5,10 +5,10 @@ from M2_VTTV.VTTV import text_voice as v
 class format:
     def set_format():
         info={}
-        v.speak("Hello Doctor, what is Patient name")
+        v.speak("Hello Doctor, what is Patient's name")
         info.update({"Name":v.takeCommand().lower()})
 
-        v.speak("What is his age")
+        v.speak("What is the age")
         info.update({"Age":v.takeCommand().lower()})
 
         v.speak("What are the Symptons")
@@ -23,7 +23,12 @@ class format:
         v.speak("Any advice doctor")
         info.update({"advice":v.takeCommand().lower()})
 
+        
+        
+
         print(str(info))
+
+        v.speak("Thanks for the information") 
 
 
 
