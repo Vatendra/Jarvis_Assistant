@@ -22,13 +22,9 @@ class format:
 
         v.speak("Any advice doctor")
         info.update({"advice":v.takeCommand().lower()})
+        v.speak("Thanks for the information")
 
-        
-        
-
-        print(str(info))
-
-        v.speak("Thanks for the information") 
+        return info
 
 
 

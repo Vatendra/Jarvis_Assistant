@@ -12,10 +12,9 @@ class task:
             v.speak(f"Sir, the time is {strTime}")
             
         elif 'cription' in query:
-            v.speak("Please speak your contents")
-            #query = v.takeCommand()
-            #fop.write_text(query)
-            fw.set_format()
+            content=fw.set_format()
+            fop.write_text(content)
+            
         else:
             v.speak("Sorry! I didn't get anything.")
             

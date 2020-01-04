@@ -1,0 +1,6 @@
+Name:narendra modi
+Age:39
+Problem:feeling cold and rashes on skin
+Diagnosis:dengue
+Prescriptions:keratin and paracetamol
+advice:no
