@@ -15,21 +15,6 @@ class task:
         elif 'cription' in query:
             content=fw.set_format()
             v.speak(content)
-            v.speak('Do you want to edit')
-            query=v.takeCommand().lower()
-            if 'yes' in query:
-                 v.speak('you want to add or delete an entry')
-                 query=v.takeCommand().lower()
-                 if 'delete' in query: 
-                   v.speak('whick entry you want to delete')
-                   k=v.takeCommand().title()
-                   del content[k]
-                 if 'add' in query:
-                     v.speak('say the key')
-                     key=v.takeCommand().title()
-                     v.speak('say the value')
-                     value=v.takeCommand().lower()
-                     content.update({key:value})
             fop.write_text(content)
             pdf.generate_pdf()
             
