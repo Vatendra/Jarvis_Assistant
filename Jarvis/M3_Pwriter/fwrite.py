@@ -4,7 +4,7 @@ class file_op:
     myfile = open('doc.txt', 'w')
     for x, y in query.items():
       myfile.write(x+':'+y+'\n')
-      myfile.write('Date :%s'%(dt.date.today()))
+    myfile.write('Date :%s'%(dt.date.today()))
     myfile.close()  
 
 
