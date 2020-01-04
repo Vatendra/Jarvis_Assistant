@@ -23,9 +23,13 @@ class task:
                  if 'delete' in query: 
                    v.speak('whick entry you want to delete')
                    k=v.takeCommand().title()
-                   content.pop(k)
+                   del content[k]
                  if 'add' in query:
-                     content.update({v.takeCommand.lower():v.takeCommand.lower()})
+                     v.speak('say the key')
+                     key=v.takeCommand().title()
+                     v.speak('say the value')
+                     value=v.takeCommand().lower()
+                     content.update({key:value})
             fop.write_text(content)
             pdf.generate_pdf()
             
