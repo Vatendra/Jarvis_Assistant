@@ -9,5 +9,3 @@ if __name__ == "__main__":
           gt.wishMe()
           query = v.takeCommand().lower()
           tsk.execute(query)
-        
-        

@@ -1,6 +1,6 @@
-Name:narendra modi
-Age:39
-Problem:feeling cold and rashes on skin
-Diagnosis:dengue
-Prescriptions:keratin and paracetamol
-advice:no
+Name:ram vilas paswan
+Age:35
+Problem:rashes on screen skin and pin code
+Diagnosis:caribbean
+Prescriptions:curable and paracetamol
+advice:warm water and batteries
