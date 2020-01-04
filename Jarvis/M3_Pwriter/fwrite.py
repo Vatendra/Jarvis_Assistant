@@ -1,3 +1,4 @@
+import datetime as dt
 class file_op:
   def write_text(query):
     myfile = open('doc.txt', 'w')
