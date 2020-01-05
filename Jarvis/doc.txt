@@ -1,0 +1,9 @@
+Name:1
+Gender:none
+Age:1
+Problem:none
+Diagnosis:1
+Prescriptions:1
+advice:1
+Date :2020-01-05
+edclscdw;lsm

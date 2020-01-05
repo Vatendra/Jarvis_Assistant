@@ -4,7 +4,7 @@ sys.path.append('D:\Project Git Hub\Jarvis_Assistant\Jarvis')
 from M2_VTTV.VTTV import text_voice as v
 from M3_Pwriter.fwrite import file_op as fop
 from M3_Pwriter.formatter import format as fw
-from texteditor import*
+from M7_editor.texteditor import*
 
 class task:
     def execute(query):
