@@ -9,19 +9,15 @@ def editor():
     pt=pytext(master)
     master.mainloop()
 
-
-
 class menubar():
     def __init__(self,parent):
        font_specs=("ubuntu",14) 
        self.menubar=Menu(parent.master,font=font_specs)
        parent.master.config(menu=self.menubar)
-       
        file_dropdown=Menu(self.menubar,font=font_specs,tearoff=0)
        file_dropdown.add_command(label="okay ",command=parent.okay)
        file_dropdown.add_separator()
        file_dropdown.add_command(label="Exit",command=parent.master.destroy)
-      
        self.menubar.add_cascade(label="file",menu=file_dropdown)
 
 class pytext:
@@ -32,7 +28,6 @@ class pytext:
       
        font_specs=("ubuntu",18)
        self.master=master #to access it from menubar class
-       self.filename=None
        self.textarea=Text(master,font=font_specs)
        self.scroll=Scrollbar(master,command=self.textarea.yview)#scroll it through y axis
        self.textarea.configure(yscrollcommand=self.scroll.set)
