@@ -1,10 +1,10 @@
 import datetime
 import sys  
 sys.path.append('D:\Project Git Hub\Jarvis_Assistant\Jarvis')
-from M5_PDFG.pdfg import pdf_converter as pdf  
 from M2_VTTV.VTTV import text_voice as v
 from M3_Pwriter.fwrite import file_op as fop
 from M3_Pwriter.formatter import format as fw
+from texteditor import*
 
 class task:
     def execute(query):
@@ -14,9 +14,9 @@ class task:
             
         elif 'cription' in query:
             content=fw.set_format()
-            v.speak(content)
             fop.write_text(content)
-            pdf.generate_pdf()
+            editor()
+            
             
             
         else:

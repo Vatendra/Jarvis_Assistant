@@ -8,6 +8,9 @@ class format:
         v.speak("Hello Doctor, what is Patient's name")
         info.update({"Name":v.takeCommand().lower()})
 
+        v.speak("What is the gender")
+        info.update({"Gender":v.takeCommand().lower()})
+
         v.speak("What is the age")
         info.update({"Age":v.takeCommand().lower()})
 

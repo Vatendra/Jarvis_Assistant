@@ -8,4 +8,4 @@ if __name__ == "__main__":
         if  'jarvis' in query or 'hello' in query:
           gt.wishMe()
           query = v.takeCommand().lower()
-          tsk.execute(query)
+          tsk.execute(query) 
