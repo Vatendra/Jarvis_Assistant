@@ -20,7 +20,7 @@ class task:
         elif 'my profile' in query:
             detail=dd.set_detail()
             fop.write_detail(detail)
-            editor()
+            #editor()
             
         else:
             v.speak("Sorry! I didn't get anything.")
