@@ -54,7 +54,7 @@ class dr_detail:
         v.speak("Your Clinic Address")
         pers_detail.append(v.takeCommand().title())
         v.speak("Any other information doctor")
-        pers_detail.append(v.takeCommand().lower())
+        pers_detail.append(v.takeCommand().title())
 
         return pers_detail
 
