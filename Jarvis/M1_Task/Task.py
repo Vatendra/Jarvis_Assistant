@@ -3,7 +3,7 @@ import sys
 sys.path.append('D:\Project Git Hub\Jarvis_Assistant\Jarvis')
 from M2_VTTV.VTTV import text_voice as v
 from M3_Pwriter.fwrite import file_op as fop
-from M3_Pwriter.formatter import format as fw
+from M3_Pwriter.formatter import format as fw, dr_detail as dd
 from M7_editor.texteditor import*
 
 class task:
@@ -12,12 +12,15 @@ class task:
             strTime = datetime.datetime.now().strftime("%H:%M:%S")    
             v.speak(f"Sir, the time is {strTime}")
             
-        elif 'cription' in query:
+        elif 'cryption' in query:
             content=fw.set_format()
             fop.write_text(content)
             editor()
             
-            
+        elif 'my profile' in query:
+            detail=dd.set_detail()
+            fop.write_detail(detail)
+            editor()
             
         else:
             v.speak("Sorry! I didn't get anything.")

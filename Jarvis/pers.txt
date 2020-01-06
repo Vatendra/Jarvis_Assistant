@@ -8,13 +8,3 @@ MBBS
 ___________________________
 ----------------------
 
-Patient Details:
-
-Name:Ritik Gupta
-Gender:M
-Age:23
-Problem:Cough
-Diagnosis:Cold
-Prescriptions:Paracetamol and combiflam
-advice:No
-Date :2020-01-06
