@@ -12,7 +12,7 @@ class task:
             strTime = datetime.datetime.now().strftime("%H:%M:%S")    
             v.speak(f"Sir, the time is {strTime}")
             
-        elif 'cryption' in query:
+        elif 'cription' in query:
             content=fw.set_format()
             fop.write_text(content)
             editor()
@@ -20,7 +20,7 @@ class task:
         elif 'my profile' in query:
             detail=dd.set_detail()
             fop.write_detail(detail)
-            #editor()
+            editor2()
             
         else:
             v.speak("Sorry! I didn't get anything.")

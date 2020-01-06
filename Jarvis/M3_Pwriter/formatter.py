@@ -35,10 +35,11 @@ class dr_detail:
         v.speak("Hi Doctor , what is your Clinic name")
         pers_detail.append("        "+v.takeCommand().upper())
         v.speak("Doctor, what is your name")
-        str = v.takeCommand().lower()
-        if 'dr' in str:
-            str.replace('dr','')
-        pers_detail.append("Dr."+str.title())
+        str = v.takeCommand()
+        if str[0]=='D' and str[1]=='r':
+            pers_detail.append(str.title())
+        else:
+            pers_detail.append("Dr."+str.title())
         v.speak("What is your qualifications")
         pers_detail.append(v.takeCommand().upper())
         v.speak("What is your Phone number")
@@ -53,7 +54,7 @@ class dr_detail:
         v.speak("Your Clinic Address")
         pers_detail.append(v.takeCommand().title())
         v.speak("Any other information doctor")
-        pers_detail.append(v.takeCommand().title())
+        pers_detail.append(v.takeCommand().lower())
 
         return pers_detail
 

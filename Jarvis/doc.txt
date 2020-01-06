@@ -1,20 +1,22 @@
 ___________________________
 ----------------------
         GUPTA CLINIC
-Dr.Ritik Gupta
+Dr Ritik Gupta
 MBBS
 7017365968
-134 Preet Vihar Phase 2
+134 Preet Vihar Phase 2 Niranjanpur Sabji Mandi Dehradun
+
 ___________________________
 ----------------------
 
+
 Patient Details:
 
-Name:Ritik Gupta
-Gender:M
-Age:23
-Problem:Cough
+Name:Ritik gupta
+Gender:Male
+Age:19
+Problem:Cough And Sneeze
 Diagnosis:Cold
 Prescriptions:Paracetamol and combiflam
-advice:No
+advice:Not required
 Date :2020-01-06
