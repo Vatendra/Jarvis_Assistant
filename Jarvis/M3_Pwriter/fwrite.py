@@ -6,13 +6,13 @@ class file_op:
         with open("doc.txt", "w") as f1:
           for line in f:
             f1.write(line)
-          f1.write("Patient Details:"+"\n\n")
+          f1.write("Patient Details-"+"\n\n")
           for x, y in query.items():
             f1.write(x+':'+y+'\n')
           f1.write('Date :%s'%(dt.date.today()))
     except:
       f1=open("doc.txt", "w")
-      f1.write("Patient Details:"+"\n\n")
+      f1.write("Patient Details-"+"\n\n")
       for x, y in query.items():
         f1.write(x+':'+y+'\n')
       f1.write('Date :%s'%(dt.date.today()))

@@ -6,6 +6,7 @@ from M3_Pwriter.fwrite import file_op as fop
 from M3_Pwriter.formatter import format as fw, dr_detail as dd
 from M7_editor.texteditor import*
 from M8_webSearch.web_Search import Gsearch_python as gp
+from M4_Database.dbOperations import Database as db
 
 class task:
     def execute(query):
@@ -17,6 +18,7 @@ class task:
             content=fw.set_format()
             fop.write_text(content)
             editor()
+            db.Insert()
             
         elif 'my profile' in query:
             detail=dd.set_detail()

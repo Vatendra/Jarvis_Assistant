@@ -4,7 +4,6 @@ ___________________________
 Dr Amit Gupta
 MBBS
 7017365968
-134 Preet Vihar Phase 2 Dehradun
 ___________________________
 ----------------------
 
@@ -12,10 +11,10 @@ ___________________________
 Patient Details:
 
 Name:Ritik Gupta
-Gender:M
-Age:23
-Problem:Cough And Sneeze
+Gender:Male
+Age:19
+Problem:Cold And Sneeze
 Diagnosis:Cold
 Prescriptions:Paracetamol and combiflam
 advice:Not required
-Date :2020-01-06
+Date :2020-01-07

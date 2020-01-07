@@ -9,8 +9,11 @@ class format:
         info.update({"Name":v.takeCommand().title()})
 
         v.speak("What is the gender")
-        info.update({"Gender":v.takeCommand().title()})
-
+        s=v.takeCommand().title()
+        if 'M' in s:
+            info.update({"Gender":"Male"})
+        else:
+            info.update({"Gender":"Female"})
         v.speak("What is the age")
         info.update({"Age":v.takeCommand().title()})
 
