@@ -6,7 +6,7 @@ from M3_Pwriter.fwrite import file_op as fop
 from M3_Pwriter.formatter import format as fw, dr_detail as dd
 from M7_editor.texteditor import*
 from M8_webSearch.web_Search import Gsearch_python as gp
-from M4_Database.dbOperations import Database as db
+from M4_Database.dbOperations import Database_Insert as di , Database_Retrieve as dr
 
 class task:
     def execute(query):
@@ -18,7 +18,7 @@ class task:
             content=fw.set_format()
             fop.write_text(content)
             editor()
-            db.Insert()
+            di.Insert()
             
         elif 'my profile' in query:
             detail=dd.set_detail()
@@ -29,7 +29,31 @@ class task:
             v.speak("What can I search for you.")
             a = gp(v.takeCommand())
             a.Gsearch()
+
+        elif 'retrieve' in query or 'document' in query:
+            while True:
+                dr.retrive()
+                v.speak("Do you again want to retrieve!")
+                str= v.takeCommand().lower()
+                if 'yes' in str or 'None' in str:
+                    pass
+                else:
+                    break
+
+        elif 'exit' in query:
+            exit()
             
         else:
             v.speak("Sorry! I didn't get anything.")
+            return
             
+        v.speak("The work has been done successfully. I hope you are satisfied with the results!")
+        v.speak("Do you want to continue")
+        str = v.takeCommand().lower()
+        if 'yes' in str:
+            pass
+        else:
+            exit()
+            
+
+       

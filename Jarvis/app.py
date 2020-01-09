@@ -7,8 +7,10 @@ if __name__ == "__main__":
         query = v.takeCommand().lower()
         if  'jarvis' in query or 'hello' in query:
           gt.wishMe()
-          query = v.takeCommand().lower()
-          tsk.execute(query) 
+          while True:
+              query = v.takeCommand().lower()
+              tsk.execute(query)
+              v.speak("What can I do for you")
 
         if 'exit' in query or 'bye' in query:
             exit()

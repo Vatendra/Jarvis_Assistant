@@ -19,5 +19,15 @@ class Gsearch_python:
 
       v.speak("Here are the results!")
       v.speak("Which number of link should I open for you?")
-      num=int(v.takeCommand())
-      webbrowser.open(l[num-1])
+      while True:
+         num=v.takeCommand()
+         try:
+            num = int(num)
+            if num > 0 and num <=5:
+               webbrowser.open(l[num-1])
+               break
+            else:
+               v.speak("You have to choose a link between 1 to 5")
+         except:
+            v.speak("Sorry i did not get it can you please repeat")
+            
