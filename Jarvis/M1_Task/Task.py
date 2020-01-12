@@ -7,6 +7,7 @@ from M3_Pwriter.formatter import format as fw, dr_detail as dd
 from M7_editor.texteditor import*
 from M8_webSearch.web_Search import Gsearch_python as gp
 from M4_Database.dbOperations import Database_Insert as di , Database_Retrieve as dr
+from M0_Gtalk.Gtalk import gtalk as gt
 
 class task:
     def execute(query):
@@ -14,10 +15,11 @@ class task:
             strTime = datetime.datetime.now().strftime("%H:%M:%S")    
             v.speak(f"Sir, the time is {strTime}")
             
-        elif 'cription' in query:
+        elif 'start' in query:
             content=fw.set_format()
             fop.write_text(content)
             editor()
+            gt.askformail()
             di.Insert()
             
         elif 'my profile' in query:

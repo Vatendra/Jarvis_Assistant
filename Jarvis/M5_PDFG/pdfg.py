@@ -18,9 +18,12 @@ class pdf_converter:
         f.close()
 
         #Hash function to generate unique file name using datetime module
+    
         uniq_filename = 'Jarvis_'+str(datetime.datetime.now().date())
         uniq_filename=uniq_filename+'_' + str(datetime.datetime.now().time()).replace(':', '_')[0:8]
         uniq_filename=uniq_filename+'.pdf'
+        with open("name.txt","w") as f:
+            f.write(uniq_filename)
         pdf.output(uniq_filename)
-    
 
+        

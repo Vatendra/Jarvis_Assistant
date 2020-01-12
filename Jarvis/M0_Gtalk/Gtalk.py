@@ -2,6 +2,7 @@ import datetime
 import sys  
 sys.path.append('D:\Project\Jarvis_Assitant')  
 from M2_VTTV.VTTV import text_voice as v
+from M9_SentToUser.mail import Email_Sent as es
     
 class gtalk(object):
     
@@ -17,3 +18,21 @@ class gtalk(object):
             v.speak("Good Evening!")  
 
         v.speak("I am Jarvis. Please tell me how may I help you") 
+
+        
+            
+    def askformail():
+        v.speak("Sir , can I send this PDF file to the patient's mail?")
+        while True:
+            str2 = v.takeCommand().lower()
+            if 'yes' in str2:
+                with open("name.txt","r") as f:
+                    name = f.read()
+                es.sendPDF(name)
+                break
+            
+            elif 'None' in str2:
+                v.speak("Sir can you please repeat")
+
+            else:
+                break

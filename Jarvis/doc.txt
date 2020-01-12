@@ -1,20 +1,21 @@
 ___________________________
 ----------------------
-        GUPTA CLINIC
-Dr Amit Gupta
+        GUPTAS CLINIC
+Dr Ritik Gupta
 MBBS
 7017365968
+GEHU Dehradun
 ___________________________
 ----------------------
 
 
-Patient Details:
+Patient Details-
 
 Name:Ritik Gupta
 Gender:Male
-Age:19
-Problem:Cold And Sneeze
+Age:23
+Problem:Cough And Sneeze
 Diagnosis:Cold
-Prescriptions:Paracetamol and combiflam
-advice:Not required
-Date :2020-01-07
+Prescriptions:Paracetamol and congratulation
+advice:Bed rest
+Date :2020-01-12
