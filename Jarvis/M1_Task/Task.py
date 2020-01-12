@@ -15,7 +15,7 @@ class task:
             strTime = datetime.datetime.now().strftime("%H:%M:%S")    
             v.speak(f"Sir, the time is {strTime}")
             
-        elif 'start' in query:
+        elif 'cription' in query:
             content=fw.set_format()
             fop.write_text(content)
             editor()
