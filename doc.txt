@@ -1,7 +1,0 @@
-Name:sushma swaraj
-Age:62
-Problem:fever and rashes on skin
-Diagnosis:dengu
-Prescriptions:caripill and paracetamol
-advice:take complete bed rest
-Date :2020-01-04
