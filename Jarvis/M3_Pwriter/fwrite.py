@@ -15,7 +15,7 @@ class file_op:
       f1.write("Patient Details-"+"\n\n")
       for x, y in query.items():
         f1.write(x+':'+y+'\n')
-      f1.write('Date :%s'%(dt.date.today()))
+      f1.write('Date:%s'%(dt.date.today()))
 
   def write_detail(query):
     myfile = open('pers.txt', 'w+')
