@@ -11,11 +11,11 @@ ___________________________
 
 Patient Details-
 
-Name:Ritik Gupta
-Gender:Male
-Age:23
-Problem:Cough And Sneeze
-Diagnosis:Cold
-Prescriptions:Paracetamol and congratulation
-advice:Bed rest
-Date :2020-01-12
+Name:Ananya
+Gender:Female
+Age:27
+Problem:Fever Cold Cough
+Diagnosis:Influencer
+Prescriptions:paracetamol
+Advice:No
+Date:2020-01-13

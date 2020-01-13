@@ -27,8 +27,8 @@ class format:
         info.update({"Prescriptions":v.takeCommand().capitalize()})
 
         v.speak("Any advice doctor")
-        info.update({"advice":v.takeCommand().capitalize()})
-        v.speak("Thanks for the information")
+        info.update({"Advice":v.takeCommand().capitalize()})
+        v.speak("Thanks for the information") 
 
         return info
 

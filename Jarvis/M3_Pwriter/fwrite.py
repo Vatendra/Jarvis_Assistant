@@ -9,7 +9,7 @@ class file_op:
           f1.write("Patient Details-"+"\n\n")
           for x, y in query.items():
             f1.write(x+':'+y+'\n')
-          f1.write('Date :%s'%(dt.date.today()))
+          f1.write('Date:%s'%(dt.date.today()))
     except:
       f1=open("doc.txt", "w")
       f1.write("Patient Details-"+"\n\n")

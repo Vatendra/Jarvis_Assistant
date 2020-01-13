@@ -8,6 +8,8 @@ from M7_editor.texteditor import*
 from M8_webSearch.web_Search import Gsearch_python as gp
 from M4_Database.dbOperations import Database_Insert as di , Database_Retrieve as dr
 from M0_Gtalk.Gtalk import gtalk as gt
+from M9_csvfile.tocsv import tocsvfile as t
+
 
 class task:
     def execute(query):
@@ -19,8 +21,9 @@ class task:
             content=fw.set_format()
             fop.write_text(content)
             editor()
-            gt.askformail()
             di.Insert()
+            t.export()
+            gt.askformail()
             
         elif 'my profile' in query:
             detail=dd.set_detail()

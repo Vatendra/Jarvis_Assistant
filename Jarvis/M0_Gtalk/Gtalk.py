@@ -22,7 +22,7 @@ class gtalk(object):
         
             
     def askformail():
-        v.speak("Sir , can I send this PDF file to the patient's mail?")
+        v.speak("Can I send this PDF file to the patient's mail?")
         while True:
             str2 = v.takeCommand().lower()
             if 'yes' in str2:
@@ -32,7 +32,7 @@ class gtalk(object):
                 break
             
             elif 'None' in str2:
-                v.speak("Sir can you please repeat")
+                v.speak("sorry, can you please repeat")
 
             else:
                 break
