@@ -1,5 +1,5 @@
 import sys
-sys.path.append('D:\Project Git Hub\Jarvis_Assistant\Jarvis')
+sys.path.append('C:\Project Git Hub\Jarvis_Assistant\Jarvis')
 from pymongo import MongoClient
 import csv
 
@@ -16,7 +16,7 @@ class tocsvfile():
      
 
      with open('Patients_record.csv','w',newline='') as new_file:
-             fieldnames=['Name','Gender','Age','Problem','Diagnosis','Prescriptions','Advice','Date']
+             fieldnames=['Date','Time','Name','Gender','Age','Problem','Diagnosis','Prescriptions','Advice']
              csv_writer=csv.DictWriter(new_file,fieldnames)
              
              csv_writer.writeheader()

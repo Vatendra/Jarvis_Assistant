@@ -1,5 +1,5 @@
 import sys
-sys.path.append('D:\Project Git Hub\Jarvis_Assistant\Jarvis')
+sys.path.append('C:\Project Git Hub\Jarvis_Assistant\Jarvis')
 from  tkinter import*
 from tkinter.filedialog import*
 from M5_PDFG.pdfg import pdf_converter as pdf  

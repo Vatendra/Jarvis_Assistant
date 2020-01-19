@@ -1,6 +1,6 @@
 import datetime
 import sys  
-sys.path.append('D:\Project\Jarvis_Assitant')  
+sys.path.append('C:\Project Git Hub\Jarvis_Assitant')  
 from M2_VTTV.VTTV import text_voice as v
 from M9_SentToUser.mail import Email_Sent as es
     

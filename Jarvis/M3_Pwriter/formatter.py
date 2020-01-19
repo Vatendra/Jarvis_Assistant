@@ -1,5 +1,5 @@
 import sys
-sys.path.append('D:\Project Git Hub\Jarvis_Assistant\Jarvis')  
+sys.path.append('C:\Project Git Hub\Jarvis_Assistant\Jarvis')  
 from M2_VTTV.VTTV import text_voice as v
 
 class format:
@@ -21,13 +21,13 @@ class format:
         info.update({"Problem":v.takeCommand().title()})
 
         v.speak("What are the Diagnosis")
-        info.update({"Diagnosis":v.takeCommand().capitalize()})
+        info.update({"Diagnosis":v.takeCommand().title()})
 
         v.speak("What are the Prescriptions")
-        info.update({"Prescriptions":v.takeCommand().capitalize()})
+        info.update({"Prescriptions":v.takeCommand().title()})
 
         v.speak("Any advice doctor")
-        info.update({"Advice":v.takeCommand().capitalize()})
+        info.update({"Advice":v.takeCommand().title()})
         v.speak("Thanks for the information") 
 
         return info

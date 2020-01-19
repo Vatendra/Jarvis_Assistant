@@ -13,4 +13,4 @@ if __name__ == "__main__":
               v.speak("What can I do for you")
 
         if 'exit' in query or 'bye' in query:
-            exit() 
+            exit()
