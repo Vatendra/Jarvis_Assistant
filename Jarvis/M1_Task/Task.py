@@ -77,8 +77,11 @@ class task:
         v.speak("The work has been done successfully. I hope you are satisfied with the results!")
         v.speak("Do you want to continue")
         str = v.takeCommand().lower()
-        if 'yes' in str:
+        if 'y' in str or 'ok' in str:
             pass
+        elif 'pause' in str or 'wait' in str or 'jarvis' in str:
+            v.speak("Ok doctor i am waiting")
+            str = input()
         else:
             exit()
             

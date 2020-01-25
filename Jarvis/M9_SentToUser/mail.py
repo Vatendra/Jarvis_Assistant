@@ -6,7 +6,6 @@ from email.message import EmailMessage
 class Email_Sent:
 
     def sendPDF(uniq_filename):
-        print(type(uniq_filename))
         EMAIL_ADDRESS = os.environ.get('my_mail')
         EMAIL_PASSWORD = os.environ.get('my_password')
 
@@ -24,8 +23,7 @@ class Email_Sent:
                 str1 =str1+r[i]
         
         msg.set_content(doc+str1)
-        s = 'D:\Project Git Hub\Jarvis_Assistant\Jarvis\\'
-        print(type(s))
+        s = 'C:\Project Git Hub\Jarvis_Assistant\Jarvis\\'
         s = s+uniq_filename
         
         with open(s,'rb') as f:

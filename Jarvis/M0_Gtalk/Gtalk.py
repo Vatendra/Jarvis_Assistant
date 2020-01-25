@@ -25,14 +25,14 @@ class gtalk(object):
         v.speak("Can I send this PDF file to the patient's mail?")
         while True:
             str2 = v.takeCommand().lower()
-            if 'yes' in str2:
+            if 'y' in str2 or 'jarvis' in str2 or 'send' in str2:
                 with open("name.txt","r") as f:
                     name = f.read()
                 es.sendPDF(name)
                 break
             
             elif 'None' in str2:
-                v.speak("sorry, can you please repeat")
+                v.speak("Sorry, can you please repeat")
 
             else:
                 break

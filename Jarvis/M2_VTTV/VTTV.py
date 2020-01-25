@@ -22,7 +22,7 @@ class text_voice:
                audio = rObject.listen(source, phrase_time_limit = 8)  
            try: 
              print("Recognizing...")   
-             query = rObject.recognize_google(audio, language ='en-US') 
+             query = rObject.recognize_google(audio, language ='en-in') 
              print(f"User said: {query}\n")
            except Exception as e:   
                 print("Say that again please...")  
