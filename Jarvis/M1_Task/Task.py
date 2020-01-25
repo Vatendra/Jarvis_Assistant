@@ -34,6 +34,7 @@ class task:
             v.speak("What can I search for you.")
             a = gp(v.takeCommand())
             a.Gsearch()
+                
 
         elif 'retrieve' in query or 'document' in query:
             while True:
